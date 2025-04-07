@@ -186,20 +186,6 @@ export default function Home() {
         }
     }, [token]);
 
-
-    // const fetchAnalytics = (videoId: string) => {
-    //     if (token) {
-    //         fetch(`/api/analytics/${videoId}`, {
-    //             headers: {
-    //                 Authorization: `Bearer ${token}`,
-    //             },
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => setAnalytics(data));
-    //     }
-    // };
-
-
     const fetchPlaylist = (id: string) => {
         if (token) {
             fetch(`/api/playlists/${id}`, {
